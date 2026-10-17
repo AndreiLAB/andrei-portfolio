@@ -150,6 +150,14 @@ function Home() {
     <section className="section-shell capabilities-section"><div className="section-heading"><div><Eyebrow>Across the stack</Eyebrow><h2>Tools I work with<span className="heading-period">.</span></h2></div><p className="section-intro">I choose tools around the problem — from data pipelines and APIs to visual, interactive applications.</p></div>
       <div className="capabilities-grid"><div className="capability"><span className="cap-icon"><Code2/></span><h3>Software engineering</h3><p>Python, C#, TypeScript, APIs and application architecture.</p></div><div className="capability"><span className="cap-icon"><Layers3/></span><h3>AI & data</h3><p>LLM-powered workflows, computer vision, SQL and data systems.</p></div><div className="capability"><span className="cap-icon"><Globe2/></span><h3>Interactive systems</h3><p>Unity, real-time interaction, simulation and 3D workflows.</p></div><div className="capability"><span className="cap-icon"><Terminal/></span><h3>Infrastructure</h3><p>Linux, Docker, cloud deployments and self-hosted services.</p></div></div>
     </section>
+    <section className="section-shell community-section">
+      <div className="section-heading"><div><Eyebrow>Beyond the code</Eyebrow><h2>Build, meet, learn<span className="heading-period">.</span></h2></div><Link to="/events" className="text-link">Events & community <ArrowRight size={16}/></Link></div>
+      <div className="community-grid">
+        <Link to="/events" className="community-card"><span className="community-label">OCT 2026 · PAST</span><h3>Junction X Vaasa</h3><p>Built a VEO digital-twin visual-localization prototype with Team JSC.</p><span className="community-foot">Computer vision <ArrowUpRight size={14}/></span></Link>
+        <Link to="/events" className="community-card community-highlight"><span className="community-label">NOV 2026 · UPCOMING</span><h3>Slush</h3><p>Joining the Driver Operations volunteer team for Helsinki’s startup event.</p><span className="community-foot">Volunteer · Operations <ArrowUpRight size={14}/></span></Link>
+        <Link to="/events" className="community-card"><span className="community-label">NOV 2026 · UPCOMING</span><h3>Junction 2026</h3><p>Returning to the main hackathon to build with a team and meet fellow makers.</p><span className="community-foot">Hackathon <ArrowUpRight size={14}/></span></Link>
+      </div>
+    </section>
     <section className="contact-band"><div><Eyebrow>Have something in mind?</Eyebrow><h2>Let’s make it <span className="serif-accent">work.</span></h2><p>Open to software roles, collaborations and interesting technical projects.</p></div><Link to="/contact" className="button button-light">Start a conversation <ArrowUpRight size={17}/></Link></section>
   </Layout>
 }
