@@ -49,6 +49,13 @@ const projects: Project[] = [
     stack: ['Python', 'InfluxDB', 'Linux', 'DigitalOcean'],
     accent: 'teal', status: 'Project',
   },
+  {
+    slug: 'advanced-parking-system', number: '06', title: 'Advanced Parking System',
+    category: 'Embedded · IoT prototype',
+    summary: 'A parking-system prototype using a Raspberry Pi Pico W, ultrasonic sensing, and a Pico Explorer board.',
+    stack: ['Raspberry Pi Pico W', 'MicroPython', 'Ultrasonic sensors', 'IoT'],
+    accent: 'blue', status: 'Prototype',
+  },
 ]
 
 function Header() {
@@ -133,7 +140,7 @@ function Home() {
 }
 
 function Projects() {
-  return <Layout><section className="page-hero section-shell"><Eyebrow>Projects & experiments</Eyebrow><h1>A collection of things<br/>I’ve <span className="serif-accent">made real.</span></h1><p>From AI-assisted workflows to computer vision and interactive systems — a selection of projects, prototypes and things I’ve learned by building.</p><div className="page-count">05 PROJECTS <span>·</span> SELECTED WORK</div></section><section className="section-shell project-listing"><div className="projects-grid">{projects.map(p => <ProjectCard key={p.slug} project={p}/>)}</div></section></Layout>
+  return <Layout><section className="page-hero section-shell"><Eyebrow>Projects & experiments</Eyebrow><h1>A collection of things<br/>I’ve <span className="serif-accent">made real.</span></h1><p>From AI-assisted workflows to computer vision and interactive systems — a selection of projects, prototypes and things I’ve learned by building.</p><div className="page-count">06 PROJECTS <span>·</span> SELECTED WORK</div></section><section className="section-shell project-listing"><div className="projects-grid">{projects.map(p => <ProjectCard key={p.slug} project={p}/>)}</div></section></Layout>
 }
 
 const detailContent: Record<string, { eyebrow: string; title: string; subtitle: string; overview: string; challenge: string; approach: string; learnings: string; repo?: string; stack: string[] }> = {
@@ -156,13 +163,13 @@ const detailContent: Record<string, { eyebrow: string; title: string; subtitle: 
     stack: ['Python', 'PyTorch', 'DINOv2', 'pye57', 'SQLite', 'NumPy', 'SciPy', 'scikit-learn'],
   },
   sola: {
-    eyebrow: 'Mixed reality · Assistant', title: 'Sola', subtitle: 'An assistant concept for headset-based interaction.',
-    overview: 'Sola is a mixed-reality assistant project intended for headset experiences. It explores how an assistant can fit into an immersive, spatial computing context.',
+    eyebrow: 'Mixed reality · Assistant', title: 'Sola', subtitle: 'A Gemini-powered AI assistant concept for Meta Quest 3.',
+    overview: 'Sola is an AI-powered mixed-reality assistant originally developed as a Bachelor’s thesis and continued as an ongoing project. Built with Unity and C#, it integrates the Gemini API and is designed for Meta Quest 3.',
     challenge: 'Interaction in a headset has different constraints from a conventional desktop interface: attention, input methods and the surrounding environment all matter.',
-    approach: 'The project sits at the intersection of Unity development, C# application logic and mixed-reality interaction. Specific implementation details and demo media will be added after the repository and current project state are reviewed.',
+    approach: 'The project combines Unity, C#, Gemini API integration, and mixed-reality interaction for Meta Quest 3. The concept explores how generative AI can support interaction inside a headset-based environment.',
     learnings: 'This project connects interactive application development with the design challenges of hands-free or spatial interfaces.',
     repo: 'https://github.com/AndreiLAB/Sola',
-    stack: ['Unity', 'C#', 'Mixed Reality', '3D interaction'],
+    stack: ['Unity', 'C#', 'Gemini API', 'Meta Quest 3', 'Mixed Reality'],
   },
   'interactive-systems': {
     eyebrow: 'Unity · Simulation', title: 'Interactive systems', subtitle: 'Game prototypes, visual logic and simulations.',
@@ -179,6 +186,14 @@ const detailContent: Record<string, { eyebrow: string; title: string; subtitle: 
     approach: 'The project used a DigitalOcean virtual machine and InfluxDB as part of the data pipeline. More detailed architecture, device specifics and screenshots will be added after the original project files are checked.',
     learnings: 'The project provided practical experience connecting a small data-collection application with deployed infrastructure and a database.',
     stack: ['Python', 'InfluxDB 2.7', 'Linux', 'DigitalOcean', 'IoT'],
+  },
+  'advanced-parking-system': {
+    eyebrow: 'Embedded · IoT prototype', title: 'Advanced Parking System', subtitle: 'Exploring sensor-driven parking logic on a microcontroller.',
+    overview: 'An embedded parking-system prototype built around a Raspberry Pi Pico W and Pico Explorer board, using ultrasonic sensors to detect nearby objects or parking occupancy.',
+    challenge: 'A physical prototype has to connect sensor readings with clear system behaviour while accounting for noisy measurements and hardware constraints.',
+    approach: 'The project uses MicroPython on the Pico W with ultrasonic sensing as the input. Detailed detection logic, connectivity behaviour, and performance figures are not stated because they have not been verified.',
+    learnings: 'The prototype brings together embedded programming, sensor integration, and the practical boundary between software logic and physical hardware.',
+    stack: ['Raspberry Pi Pico W', 'MicroPython', 'Pico Explorer', 'Ultrasonic sensors'],
   },
 }
 
