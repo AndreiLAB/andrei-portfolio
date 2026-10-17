@@ -188,10 +188,10 @@ const detailContent: Record<string, { eyebrow: string; title: string; subtitle: 
   },
   'interactive-systems': {
     eyebrow: 'Unity · Simulation', title: 'Interactive systems', subtitle: 'Game prototypes, visual logic and simulations.',
-    overview: 'A collection of Unity projects covering interactive game mechanics and simulation-style systems, including game prototypes and a conveyor-system project.',
+    overview: 'A collection of Unity work spanning interactive game mechanics and industrial simulation. The projects include MusicBeast, a Geometry Dash-inspired game prototype with custom level, physics, and gameplay mechanics; HomeSweetHome, a Five Nights at Freddy’s-inspired remake with animatronic behaviour and core game mechanics; and a conveyor-system simulation developed in an academic setting.',
     challenge: 'Interactive projects need more than a visual result: the underlying behaviour should be predictable, maintainable and easy to test while iterating on the experience.',
-    approach: 'The work uses Unity and C# for behaviour and interaction, with Blender supporting 3D assets and visual workflows where relevant. Individual projects will be split into their own case studies once their repositories and media are selected.',
-    learnings: 'Prototyping has been a way to practise systems thinking, debugging and the relationship between code, assets and user experience.',
+    approach: 'The game prototypes use Unity and C# to implement interactions, levels, physics, animations, and behaviour. The academic conveyor simulation combined Unity, 3D models created in SolidWorks, TwinCAT-related maintenance UI, animations, and interactive controls for a digital-twin/automation workflow. An internship database project also involved structuring internship records and improving query handling.',
+    learnings: 'These projects helped connect gameplay programming and visual design with systems thinking, debugging, database structure, and industrial automation concepts.',
     stack: ['Unity', 'C#', 'Blender', 'Interactive simulation'],
   },
   'iot-data-pipeline': {
@@ -289,7 +289,7 @@ function Contact() {
   return <Layout><section className="contact-page section-shell"><Eyebrow>Contact</Eyebrow><h1>Have a good problem?<br/><span className="serif-accent">Let’s talk.</span></h1><p>I’m interested in software opportunities, collaborations and projects where thoughtful engineering can make a difference.</p><button className="email-card" onClick={copyEmail}><span className="email-icon"><Mail/></span><span><small>EMAIL</small><b>{email}</b></span><span className="copy-label">{copied ? 'Copied!' : 'Copy'} {copied ? <Check size={15}/> : <ArrowUpRight size={15}/>}</span></button><div className="contact-methods">
       <a className="contact-method" href={`tel:${phone}`}><span className="email-icon"><Mail/></span><span><small>PHONE</small><b>+358 40 855 7809</b></span><span className="copy-label">Call <ArrowUpRight size={14}/></span></a>
       <a className="contact-method" href="https://wa.me/358408557809" target="_blank" rel="noreferrer"><span className="email-icon"><MessageCircle/></span><span><small>WHATSAPP</small><b>Message me</b></span><span className="copy-label">Open <ArrowUpRight size={14}/></span></a>
-      <a className="contact-method" href="https://t.me/" target="_blank" rel="noreferrer"><span className="email-icon"><Send/></span><span><small>TELEGRAM</small><b>Find me on Telegram</b></span><span className="copy-label">Telegram <ArrowUpRight size={14}/></span></a>
+      <a className="contact-method" href="https://t.me/+358408557809" target="_blank" rel="noreferrer"><span className="email-icon"><Send/></span><span><small>TELEGRAM</small><b>Message me on Telegram</b></span><span className="copy-label">Telegram <ArrowUpRight size={14}/></span></a>
     </div>
     <div className="contact-socials"><a href="https://www.linkedin.com/in/andrei-ziber/" target="_blank" rel="noreferrer"><Linkedin size={17}/> LinkedIn <ArrowUpRight size={14}/></a><a href="https://github.com/AndreiLAB" target="_blank" rel="noreferrer"><Github size={17}/> GitHub <ArrowUpRight size={14}/></a></div><p className="contact-small">Based in Finland · English and Russian · For professional enquiries, email is best.</p></section></Layout>
 }
