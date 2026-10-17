@@ -48,3 +48,7 @@ This is a static frontend and does not need the JobPilot backend to run. It can 
 ## Accuracy note
 
 Project pages intentionally avoid unverified metrics and claims. JobPilot’s case study is based on its README-level architecture. VEO and other case studies are draft summaries and should be checked against the current repositories and original project files before publication.
+
+---
+
+Automated deploy trigger: update README to start a GitHub Actions build & Pages deploy.
