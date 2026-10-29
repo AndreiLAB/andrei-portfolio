@@ -267,7 +267,7 @@ function About() {
       <div className="about-aside" style={{ width: '100%' }}>
         <div style={{ background: '#dfe4da', border: '1px solid #d6ddd2', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 12px 30px rgba(32, 40, 32, 0.08)' }}>
           <img
-            src="https://github.com/AndreiLAB.png"
+            src="/photo_2024-10-23_20-45-33.jpg"
             alt="Andrei Ziber portrait"
             style={{ display: 'block', width: '100%', height: '540px', objectFit: 'cover', objectPosition: 'center top', background: '#dfe4da' }}
           />
