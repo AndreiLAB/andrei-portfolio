@@ -36,9 +36,9 @@ const projects: Project[] = [
     accent: 'green', status: 'Project',
   },
   {
-    slug: 'interactive-systems', number: '04', title: 'Interactive systems',
-    category: 'Unity · Simulation',
-    summary: 'Interactive game prototypes and simulations, from gameplay systems to conveyor logic.',
+    slug: 'twincat-automation', number: '04', title: 'TwinCAT Automation & Conveyor Digital Twin',
+    category: 'Industrial automation · Digital twin',
+    summary: 'A virtual vacuum-production conveyor developed with Unity 3D and SolidWorks as an interactive analogue of Factory I/O.',
     stack: ['Unity', 'C#', 'Blender'],
     accent: 'orange', status: 'Selected work',
   },
@@ -194,12 +194,12 @@ const detailContent: Record<string, { eyebrow: string; title: string; subtitle: 
     repo: 'https://github.com/AndreiLAB/Sola',
     stack: ['Unity', 'C#', 'Gemini API', 'Meta Quest 3', 'Mixed Reality'],
   },
-  'interactive-systems': {
-    eyebrow: 'Unity · Simulation', title: 'Interactive systems', subtitle: 'Game prototypes, visual logic and simulations.',
-    overview: 'A collection of Unity work spanning interactive game mechanics and industrial simulation. The projects include MusicBeast, a Geometry Dash-inspired game prototype with custom level, physics, and gameplay mechanics; HomeSweetHome, a Five Nights at Freddy’s-inspired remake with animatronic behaviour and core game mechanics; and a conveyor-system simulation developed in an academic setting.',
+  'twincat-automation': {
+    eyebrow: 'Industrial automation · Digital twin', title: 'TwinCAT Automation & Conveyor Digital Twin', subtitle: 'A Unity-based virtual model of an automated vacuum-production conveyor.',
+    overview: 'During a Student Internship at LAB University of Applied Sciences (June–August 2024), my team developed an automated model of a vacuum-production conveyor. Unity 3D was used to create an interactive virtual analogue of the industry-standard Factory I/O, with 3D assets designed in SolidWorks. This project connects industrial automation concepts with real-time 3D simulation and digital-twin workflows.',
     challenge: 'Interactive projects need more than a visual result: the underlying behaviour should be predictable, maintainable and easy to test while iterating on the experience.',
-    approach: 'The game prototypes use Unity and C# to implement interactions, levels, physics, animations, and behaviour. The academic conveyor simulation combined Unity, 3D models created in SolidWorks, TwinCAT-related maintenance UI, animations, and interactive controls for a digital-twin/automation workflow. An internship database project also involved structuring internship records and improving query handling.',
-    learnings: 'These projects helped connect gameplay programming and visual design with systems thinking, debugging, database structure, and industrial automation concepts.',
+    approach: 'The team used Unity 3D to build the conveyor simulation and SolidWorks to create 3D models. The project was developed as an analogue of Factory I/O. I also completed a TwinCAT course during my Bachelor’s studies, which provided relevant background in industrial control and automation. The public LinkedIn description does not specify the exact PLC communication architecture, so the case study does not claim a verified live TwinCAT-to-Unity connection.',
+    learnings: 'The internship provided practical experience combining 3D modelling, Unity simulation, teamwork, and industrial automation concepts, and helped connect software development with production-system visualisation.',
     stack: ['Unity', 'C#', 'Blender', 'Interactive simulation'],
   },
   'iot-data-pipeline': {
